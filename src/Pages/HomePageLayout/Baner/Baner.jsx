@@ -12,7 +12,7 @@ const Baner = () => {
   return (
     <div>
 
-      <Carousel autoPlay infiniteLoop>
+      <Carousel>
 
         <div className="baner_image">
           <img src={img1} />

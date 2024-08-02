@@ -9,7 +9,7 @@ import { TiShoppingCart } from "react-icons/ti";
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
 
-  const handelHamburgerIcome = () => {
+  const handelHamburgerIcon = () => {
     setMenuIcon(!menuIcon);
   };
 
@@ -32,7 +32,7 @@ const Navbar = () => {
         >
           <ul className="navbar_navigate_inner_container">
 
-            <li>
+            <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -45,7 +45,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li>
+            <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
@@ -58,7 +58,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li>
+            <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="dashboard"
                 className={({ isActive }) =>
@@ -71,7 +71,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li>
+            <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="/menu"
                 className={({ isActive }) =>
@@ -84,7 +84,7 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li>
+            <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="/shop"
                 className={({ isActive }) =>
@@ -125,7 +125,7 @@ const Navbar = () => {
             <IoMdContact />
           </div>
 
-          <div onClick={handelHamburgerIcome} className="main_menu_icon_container">
+          <div onClick={handelHamburgerIcon} className="main_menu_icon_container">
             {menuIcon ? (
               <div className="hamburger_icon">
                 <MdOutlineMenu />

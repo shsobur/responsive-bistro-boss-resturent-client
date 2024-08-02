@@ -13,3 +13,9 @@
   min-width: 399px;
   margin: auto;
 }
+
+.main_home_page_container {
+  max-width: 1920px;
+  min-width: 399px;
+  margin: auto;
+}

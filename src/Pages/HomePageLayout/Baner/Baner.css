@@ -1,0 +1,12 @@
+.baner_image {
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+.baner_image img {
+  height: 100%;
+}
+
+.carousel {
+  text-align: center;
+}

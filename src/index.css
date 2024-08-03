@@ -19,3 +19,8 @@
   min-width: 399px;
   margin: auto;
 }
+
+.main_image_slider_container {
+  max-width: 1320px;
+  margin: auto;
+}

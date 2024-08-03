@@ -10,18 +10,18 @@
 
 .main_navbar_container {
   max-width: 1920px;
-  min-width: 399px;
+  min-width: 345px;
   margin: auto;
 }
 
 .main_home_page_container {
   max-width: 1920px;
-  min-width: 399px;
+  min-width: 354px;
   margin: auto;
 }
 
 .main_image_slider_container {
   max-width: 1320px;
-  min-width: 399px;
+  min-width: 345px;
   margin: auto;
 }

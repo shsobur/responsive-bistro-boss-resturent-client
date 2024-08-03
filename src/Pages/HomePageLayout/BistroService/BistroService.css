@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.main_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("https://i.postimg.cc/02FyxKj3/chef-service.jpg");
+}
+
+.main_description_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  width: 80%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.description_inner_container h2 {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+}
+
+.description_inner_container p {
+  font-family: "Inter", sans-serif;
+  padding: 10px 50px;
+}

@@ -1,5 +1,6 @@
 import Baner from "./Baner/Baner";
 import BistroService from "./BistroService/BistroService";
+import CallUs from "./CallUs/CallUs";
 import OrderImageSlider from "./OrderImageSlider/OrderImageSlider";
 
 const HomePageLayout = () => {
@@ -8,6 +9,7 @@ const HomePageLayout = () => {
       <Baner></Baner>
       <OrderImageSlider></OrderImageSlider>
       <BistroService></BistroService>
+      <CallUs></CallUs>
     </div>
   );
 };

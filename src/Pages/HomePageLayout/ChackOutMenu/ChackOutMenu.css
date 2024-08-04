@@ -1,0 +1,254 @@
+.main_chackout_bg_container {
+  height: 90vh;
+  width: 100%;
+  background-image: url("https://i.postimg.cc/Bnb4v5kC/featured.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.chackout_bg_shad_container {
+  height: 100%;
+  width: 100%;
+  background-color: #1515158a;
+}
+
+.chackout_inner_section_title_contaienr {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}
+
+.chackout_inner_section_title_contaienr p {
+  font-size: 1.2rem;
+  padding: 10px 0;
+  font-weight: 400;
+  color: #D99904;
+}
+
+.chackout_headeing_contaienr {
+  border-bottom: 5px solid #E8E8E8;
+  border-top: 5px solid #E8E8E8;
+  display: inline-block;
+}
+
+.chackout_headeing_contaienr h2 {
+  font-size: 2.8rem;
+  padding: 5px 50px;
+  color: #ffffff;
+}
+
+.main_chackout_content_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(90vh - 242px);
+  width: 100%;
+}
+
+.chackout_image_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.chackout_inner_image_comtaienr {
+  height: 60%;
+  width: 65%;
+}
+
+.chackout_inner_image_comtaienr img {
+  height: 100%;
+  width: 100%;
+}
+
+.chackout_text_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 100px;
+  padding-right: 160px;
+}
+
+.chackout_inner_text_container h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.chackout_inner_text_container p {
+  padding: 5px 0;
+}
+
+.chackout_inner_text_container button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-bottom: 4px solid #ffffff;
+  transition: 0.1s ease-in-out;
+}
+
+.chackout_inner_text_container button:hover {
+  color: #ffffff;
+  background-color: #7373738f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+  .chackout_headeing_contaienr h2 {
+    font-size: 2.6rem;
+    padding: 5px 40px;
+  }
+
+  .chackout_inner_image_comtaienr {
+    height: 60%;
+    width: 70%;
+  }
+
+  .chackout_text_container {
+    padding-left: 80px;
+    padding-right: 50px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .main_chackout_content_container {
+    height: calc(90vh - 242px);
+  }
+
+  .chackout_headeing_contaienr h2 {
+    font-size: 2.2rem;
+    padding: 5px 30px;
+  }
+
+  .chackout_inner_section_title_contaienr p {
+    font-size: 1rem;
+  }
+
+  .chackout_inner_image_comtaienr {
+    height: 50%;
+    width: 80%;
+  }
+
+  .chackout_text_container {
+    padding-left: 80px;
+    padding-right: 50px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .chackout_inner_section_title_contaienr p {
+    font-size: 1rem;
+  }
+
+  .chackout_headeing_contaienr h2 {
+    font-size: 2.1rem;
+    padding: 5px 25px;
+  }
+
+  .chackout_headeing_contaienr {
+    border-bottom: 4px solid #E8E8E8;
+    border-top: 4px solid #E8E8E8;
+  }
+
+  .chackout_inner_image_comtaienr {
+    height: 50%;
+    width: 95%;
+  }
+
+  .chackout_text_container {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .chackout_inner_section_title_contaienr {
+    padding-top: 40px;
+  }
+
+  .chackout_headeing_contaienr h2 {
+    font-size: 2rem;
+    padding: 5px 25px;
+  }
+
+  .main_chackout_content_container {
+    flex-direction: column;
+  }
+
+  .chackout_image_container {
+    height: 60%;
+    width: 100%;
+  }
+
+  .chackout_text_container {
+    height: 60%;
+    width: 100%;
+  }
+
+  .chackout_inner_image_comtaienr {
+    height: 90%;
+    width: 80%;
+  }
+
+  .chackout_text_container {
+    padding: 40px 10px;
+  }
+
+  .chackout_inner_text_container p {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 475px) {
+  .chackout_inner_section_title_contaienr p {
+    font-size: 12px;
+  }
+
+  .chackout_headeing_contaienr h2 {
+    font-size: 1.6rem;
+    padding: 5px 20px;
+  }
+
+  .chackout_headeing_contaienr h2 {
+    font-size: 1.5rem;
+    padding: 5px 20px;
+  }
+
+  .chackout_inner_image_comtaienr {
+    height: 75%;
+    width: 85%;
+  }
+}

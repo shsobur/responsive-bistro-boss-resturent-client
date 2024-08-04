@@ -38,6 +38,12 @@
   margin: auto;
 }
 
+.main_chackout_container {
+  max-width: 1920px;
+  min-width: 345px;
+  margin: auto;
+  margin-bottom: 100px;
+}
 
 
 

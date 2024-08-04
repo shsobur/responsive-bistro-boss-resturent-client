@@ -34,3 +34,61 @@
   font-family: "Inter", sans-serif;
   padding: 10px 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .description_inner_container h2 {
+    font-size: 3rem;
+  }
+  
+  .description_inner_container p {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .main_description_container {
+    width: 90%;
+  }
+
+  .description_inner_container h2 {
+    font-size: 2.3rem;
+  }
+  
+  .description_inner_container p {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 475px) {
+  .description_inner_container h2 {
+    font-size: 2rem;
+  }
+
+  .description_inner_container p {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+}

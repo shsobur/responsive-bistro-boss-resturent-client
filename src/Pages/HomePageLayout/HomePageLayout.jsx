@@ -7,6 +7,7 @@ import ChackOutMenu from "./ChackOutMenu/ChackOutMenu";
 import FromOurMenu from "./FromOurMenu/FromOurMenu";
 import OrderImageSlider from "./OrderImageSlider/OrderImageSlider";
 import Reviews from "./Reviews/Reviews";
+import ChefRecommended from "./ChefRecommended/ChefRecommended";
 
 const HomePageLayout = () => {
   return (
@@ -22,6 +23,7 @@ const HomePageLayout = () => {
       <BistroService></BistroService>
       <FromOurMenu></FromOurMenu>
       <CallUs></CallUs>
+      <ChefRecommended></ChefRecommended>
       <ChackOutMenu></ChackOutMenu>
       <Reviews></Reviews>
     </div>

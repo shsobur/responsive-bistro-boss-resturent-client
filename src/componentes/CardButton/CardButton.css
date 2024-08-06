@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.main_cardName_container {
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.main_cardName_container button {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  color: #bb8506;
+  border-radius: 8px;
+  background-color: #E8E8E8;
+  border-bottom: 3px solid #bb8506;
+}
+
+.main_cardName_container button:hover {
+  background-color: #1F2937;
+  border-bottom: 3px solid #1F2937;
+  transition: 0.4s ease-in;
+}

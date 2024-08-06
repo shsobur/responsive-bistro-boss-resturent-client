@@ -38,6 +38,12 @@
   margin: auto;
 }
 
+.main_chef_recommend_container {
+  max-width: 1320px;
+  min-width: 345px;
+  margin: auto;
+}
+
 .main_menu_item_container {
   max-width: 1320px;
   min-width: 345px;

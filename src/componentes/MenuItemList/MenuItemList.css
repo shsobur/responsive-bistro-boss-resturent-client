@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.mani_menu_item_list_inner_container {
+  height: 100%;
+  width: 100%;
+}
+
+.main_menu_content_list_container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  height: 150px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.menu_list_image_container {
+  height: 100%;
+  width: 25%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 40%;
+  box-shadow: 0 4px 8px 0 #0000000a, 0 6px 20px 0 #0000000a;
+}
+
+.menu_list_image_container img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 40%;
+}
+
+.main_list_title_content_container {
+  display: flex;
+  height: 100%;
+  width: 75%;
+  box-shadow: 10px 10px 10px 0 #0000000a, 10px 20px 20px 0 #0000000a;
+}
+
+.main_list_title_content_container h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.main_list_title_content_container p {
+  font-family: "Inter", serif;
+  font-size: 14px;
+  padding-top: 5px;
+  color: #737373;
+}
+
+.addtional_menu_price_container p {
+  padding-top: 6px;
+  padding-right: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #BB8506;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .menu_list_image_container {
+    width: 20%;
+  }
+
+  .main_list_title_content_container {
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .menu_list_image_container {
+    height: 90%;
+    width: 25%;
+  }
+
+  .main_list_title_content_container {
+    width: 75%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  .menu_list_image_container {
+    height: 90%;
+    width: 30%;
+  }
+
+  .main_list_title_content_container {
+    width: 70%;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 475px) {
+  .addtional_menu_price_container p {
+    padding-top: 20px;
+  }
+
+  .main_list_title_content_container {
+    height: auto;
+    padding-bottom: 10px;
+  }
+}

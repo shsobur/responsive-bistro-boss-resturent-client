@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.main_review_inner_container {
+  height: 100%;
+  width: 100%;
+}
+
+.main_reciew_text_inner_container {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.main_reciew_text_inner_container h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #CD9003;
+}
+
+.main_reciew_text_inner_container p {
+  padding: 20px 150px;
+  font-size: 1.1rem;
+}
+
+.review_reating_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review_icon_container {
+  font-size: 6rem;
+  padding-top: 50px;
+  color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .main_reciew_text_inner_container p {
+    padding: 20px 100px;
+  }
+
+  .review_icon_container {
+    font-size: 5.5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .main_reciew_text_inner_container p {
+    padding: 20px 80px;
+  }
+
+  .review_icon_container {
+    font-size: 5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 640px) {
+  .main_reciew_text_inner_container p {
+    padding: 20px 60px;
+    font-size: 1rem;
+  }
+
+  .main_reciew_text_inner_container h2 {
+    font-size: 1.5rem;
+  }
+
+  .review_icon_container {
+    font-size: 4.5rem;
+  }
+}
+
+
+
+@media screen and (max-width: 475px) {
+  .swiper-slide swiper-slide-next  {
+    font-size: 1rem;
+  }
+
+  .main_reciew_text_inner_container p {
+    padding: 20px 50px;
+    font-size: 14px;
+  }
+
+  .main_reciew_text_inner_container h2 {
+    font-size: 1.2rem;
+  }
+
+  .review_icon_container {
+    font-size: 4rem;
+  }
+}

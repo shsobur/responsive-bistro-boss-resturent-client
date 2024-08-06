@@ -2,6 +2,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import "../Footer/Footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="main_footer_container">
       <div className="main_footer_content_container">
@@ -48,7 +50,7 @@ const Footer = () => {
       </div>
 
       <div className="main_copyright_container">
-        <h1>Copyright © CulinaryCloud. All rights reserved.</h1>
+        <h1>Copyright ©{currentYear} CulinaryCloud. All rights reserved.</h1>
       </div>
 
     </div>

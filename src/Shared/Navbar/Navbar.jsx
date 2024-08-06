@@ -1,5 +1,5 @@
 import "../Navbar/Navbar.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoMdContact } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md";
 import { GoX } from "react-icons/go";
@@ -18,8 +18,10 @@ const Navbar = () => {
       <nav className="main_nav_content_contaienr">
 
         <div className="web_title_name">
-          <h2>BISTRO BOSS</h2>
-          <span>RESTURANT</span>
+          <Link to="/">
+            <h2>BISTRO BOSS</h2>
+            <span>RESTURANT</span>
+          </Link>
         </div>
 
         <div

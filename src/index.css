@@ -38,6 +38,12 @@
   margin: auto;
 }
 
+.main_menu_item_container {
+  max-width: 1320px;
+  min-width: 345px;
+  margin: auto;
+}
+
 .main_chackout_container {
   max-width: 1920px;
   min-width: 345px;
@@ -45,6 +51,11 @@
   margin-bottom: 100px;
 }
 
+.main_review_container {
+  max-width: 1320px;
+  min-width: 345px;
+  margin: auto;
+}
 
 
 

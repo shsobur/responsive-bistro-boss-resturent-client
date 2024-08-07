@@ -21,7 +21,7 @@ const FromOurMenu = () => {
       <div className="main_menu_item_container">
         <div className="main_menu_item_list_container">
           {
-            popular.map(item => <MenuItemList key={item._id} item={item}></MenuItemList>)
+            popular.map(item => <MenuItemList key={item._id} menuItem={item}></MenuItemList>)
           }
         </div>
 

@@ -1,7 +1,7 @@
 import "../MenuItemList/MenuItemList.css";
 
-const MenuItemList = ({ item }) => {
-  const { name, image, recipe, price } = item;
+const MenuItemList = ({ menuItem }) => {
+  const { name, image, recipe, price } = menuItem;
 
   return (
     <div className="mani_menu_item_list_inner_container">

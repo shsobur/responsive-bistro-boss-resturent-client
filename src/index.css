@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,11 +11,15 @@
   box-sizing: border-box;
 }
 
+/* NaveBar main style */
+
 .main_navbar_container {
   max-width: 1920px;
   min-width: 345px;
   margin: auto;
 }
+
+/* HomePage main style */
 
 .main_home_page_container {
   max-width: 1920px;
@@ -63,6 +70,25 @@
   margin: auto;
 }
 
+/* MenuPage manin style */
+
+.main_menu_baner_container {
+  max-width: 1920px;
+  min-width: 345px;
+  margin: auto;
+}
+
+.main_today_offeref_container {
+  max-width: 1320px;
+  min-width: 345px;
+  margin: auto
+}
+
+.main_dessert_baner_contaienr {
+  max-width: 1920px;
+  min-width: 345px;
+  margin: auto;
+}
 
 
 
@@ -73,6 +99,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer main style */
 
 .main_footer_container {
   max-width: 1920px;

@@ -1,0 +1,38 @@
+.main_dessert_baner_bg_contaienr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  margin-top: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("https://i.postimg.cc/vH7gFFxV/dessert-bg.jpg");
+}
+
+.dessert_baner_title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 80%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #15151580;
+}
+
+.dessert_baner_title_container h2 {
+  font-size: 3.8rem;
+  font-weight: 600;
+  font-family: "Cinzel", serif;
+}
+
+
+.dessert_baner_title_container p {
+  font-size: 16px;
+  padding: 20px 200px;
+  font-family: "Inter", serif;
+}

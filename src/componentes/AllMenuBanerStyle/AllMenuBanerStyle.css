@@ -1,0 +1,90 @@
+.menu_food_title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 70%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #15151580;
+}
+
+.menu_food_title_container h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Cinzel", serif;
+}
+
+.menu_food_title_container p {
+  font-size: 14px;
+  padding: 0 150px;
+  font-family: "Inter", serif;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .menu_food_title_container {
+    height: 45%;
+    width: 80%;
+  }
+
+  .menu_food_title_container h2 {
+    font-size: 4.3rem;
+  }
+
+  .menu_food_title_container p {
+    padding: 0 50px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu_food_title_container {
+    height: 40%;
+    width: 90%;
+  }
+
+  .menu_food_title_container h2 {
+    font-size: 3.7rem;
+  }
+
+  .menu_food_title_container p {
+    padding: 0 30px;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .menu_food_title_container {
+    height: 35%;
+    width: 90%;
+  }
+
+  .menu_food_title_container h2 {
+    font-size: 3.2rem;
+  }
+
+  .menu_food_title_container p {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .menu_food_title_container {
+    height: 25%;
+  }
+
+  .menu_food_title_container h2 {
+    font-size: 2.5rem;
+  }
+
+  .menu_food_title_container p {
+    font-size: 12px;
+  }
+}

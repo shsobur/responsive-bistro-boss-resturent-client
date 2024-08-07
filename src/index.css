@@ -84,10 +84,22 @@
   margin: auto
 }
 
+.mani_menu_food_baner_container {
+  max-width: 1920px;
+  min-width: 345px;
+  margin: auto;
+}
+
 .main_dessert_baner_contaienr {
   max-width: 1920px;
   min-width: 345px;
   margin: auto;
+}
+
+.main_dessert_list_container {
+  max-width: 1320px;
+  min-width: 345px;
+  margin: auto
 }
 
 

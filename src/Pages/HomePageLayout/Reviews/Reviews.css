@@ -38,9 +38,6 @@
 }
 
 
-
-
-
 @media screen and (max-width: 1024px) {
   .main_reciew_text_inner_container p {
     padding: 20px 100px;
@@ -52,7 +49,6 @@
 }
 
 
-
 @media screen and (max-width: 768px) {
   .main_reciew_text_inner_container p {
     padding: 20px 80px;
@@ -61,42 +57,8 @@
   .review_icon_container {
     font-size: 5rem;
   }
-}
-
-
-
-@media screen and (max-width: 640px) {
-  .main_reciew_text_inner_container p {
-    padding: 20px 60px;
-    font-size: 1rem;
-  }
-
-  .main_reciew_text_inner_container h2 {
-    font-size: 1.5rem;
-  }
 
   .review_icon_container {
-    font-size: 4.5rem;
-  }
-}
-
-
-
-@media screen and (max-width: 475px) {
-  .swiper-slide swiper-slide-next  {
-    font-size: 1rem;
-  }
-
-  .main_reciew_text_inner_container p {
-    padding: 20px 50px;
-    font-size: 14px;
-  }
-
-  .main_reciew_text_inner_container h2 {
-    font-size: 1.2rem;
-  }
-
-  .review_icon_container {
-    font-size: 4rem;
+    padding-top: 10px;
   }
 }

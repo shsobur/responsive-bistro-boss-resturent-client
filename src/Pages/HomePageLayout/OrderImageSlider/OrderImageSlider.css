@@ -26,30 +26,15 @@
 
 
 
+@media screen and (max-width: 1024px) {
+  .slider_image_title_contaienr {
+    padding-left: 80px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .slider_image_title_contaienr {
     padding-left: 60px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 640px) {
-  .slider_image_title_contaienr {
-    padding-left: 45px;
-    font-size: 4vw;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 475px) {
-  .slider_image_title_contaienr {
-    font-size: 4vw;
-    padding-left: 25px;
   }
 }

@@ -1,36 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.main_chef_recommend_inner_container {
+.chef_recommend_card_box_inner_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  gap:50px;
-  margin: 100px 0 200px 0;
+  justify-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-.main_offered_card_container img {
+.main_chef_recommend_inner_container {
+  height: 100%;
   width: 100%;
 }
 
-.mani_offered_content_contaienr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.main_recommend_card_container {
+  width: 300px;
+  background-color: #F3F3F3;
+  box-shadow: 5px 4px 8px 0 #00000041, 0 6px 20px 0 #00000041;
+}
+
+.main_recommend_img_container img {
+  height: 100%;
+  width: 100%;
+}
+
+.main_recommend_title_container {
+  padding-top: 20px;
   text-align: center;
-  margin-top: 40px;
-  padding: 0 20px 20px 20px;
 }
 
-.mani_offered_content_contaienr h2 {
-  font-size: 1.3rem;
+.main_recommend_title_container h2 {
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #151515;
-  font-family: "Inter", sans-serif;
 }
 
-.mani_offered_content_contaienr p {
+.main_recommend_title_container p {
   font-size: 16px;
-  padding: 10px 0;
-  color: #737373;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main_recommend_card_container {
+    width: 242px;
+  }
+
+  .main_recommend_title_container h2 {
+    font-size: 1.1rem;
+  }
+
+  .main_recommend_title_container p {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .chef_recommend_card_box_inner_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main_recommend_card_container {
+    width: 100%;
+  }
+
+  .main_recommend_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main_recommend_img_container {
+    height: 100%;
+    width: 30%;
+  }
+
+  .main_recommend_title_container {
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .main_recommend_title_container p {
+    padding: 0;
+  }
 }

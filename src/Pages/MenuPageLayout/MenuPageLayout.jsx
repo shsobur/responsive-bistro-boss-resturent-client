@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import ScrollToTop from "../../componentes/ScrollToTop/ScrollToTop";
 import DessertBaner from "./DessertBaner/DessertBaner";
 import DessertMenuList from "./DessertMenuList/DessertMenuList";
@@ -13,6 +14,10 @@ import TodaysOffered from "./TodaysOffered/TodaysOffered";
 const MenuPageLayout = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bistro Boss Restaurant | OUR MENU</title>
+      </Helmet>
+
       <ScrollToTop></ScrollToTop>
 
       <MenuBaner></MenuBaner>

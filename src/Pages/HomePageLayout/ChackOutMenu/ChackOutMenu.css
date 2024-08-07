@@ -102,22 +102,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1280px) {
   .chackout_headeing_contaienr h2 {
     font-size: 2.6rem;
@@ -134,9 +118,6 @@
     padding-right: 50px;
   }
 }
-
-
-
 
 @media screen and (max-width: 1080px) {
   .main_chackout_content_container {
@@ -163,9 +144,6 @@
   }
 }
 
-
-
-
 @media screen and (max-width: 768px) {
   .chackout_inner_section_title_contaienr p {
     font-size: 1rem;
@@ -190,65 +168,8 @@
     padding-left: 20px;
     padding-right: 10px;
   }
-}
-
-
-@media screen and (max-width: 640px) {
-  .chackout_inner_section_title_contaienr {
-    padding-top: 40px;
-  }
-
-  .chackout_headeing_contaienr h2 {
-    font-size: 2rem;
-    padding: 5px 25px;
-  }
-
-  .main_chackout_content_container {
-    flex-direction: column;
-  }
-
-  .chackout_image_container {
-    height: 60%;
-    width: 100%;
-  }
-
-  .chackout_text_container {
-    height: 60%;
-    width: 100%;
-  }
-
-  .chackout_inner_image_comtaienr {
-    height: 90%;
-    width: 80%;
-  }
-
-  .chackout_text_container {
-    padding: 40px 10px;
-  }
 
   .chackout_inner_text_container p {
     font-size: 14px;
-  }
-}
-
-
-@media screen and (max-width: 475px) {
-  .chackout_inner_section_title_contaienr p {
-    font-size: 12px;
-  }
-
-  .chackout_headeing_contaienr h2 {
-    font-size: 1.6rem;
-    padding: 5px 20px;
-  }
-
-  .chackout_headeing_contaienr h2 {
-    font-size: 1.5rem;
-    padding: 5px 20px;
-  }
-
-  .chackout_inner_image_comtaienr {
-    height: 75%;
-    width: 85%;
   }
 }

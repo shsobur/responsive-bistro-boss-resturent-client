@@ -18,12 +18,6 @@
 }
 
 
-
-
-
-
-
-
 @media screen and (max-width: 1024px) {
   .callus_inner_content_container h2 {
     font-size: 3.3rem;
@@ -34,19 +28,5 @@
   .callus_inner_content_container h2 {
     font-size: 2.8rem;
     padding: 40px 0;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .callus_inner_content_container h2 {
-    font-size: 2.2rem;
-    padding: 35px 0;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .callus_inner_content_container h2 {
-    font-size: 1.6rem;
-    padding: 25px 0;
   }
 }

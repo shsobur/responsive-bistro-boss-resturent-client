@@ -1,36 +1,29 @@
-import CardButton from "../CardButton/CardButton";
 import "../RecommendedItemCard/RecommendedItemCard.css";
 
 const RecommendedItemCard = ({ offer }) => {
   const { name, image, recipe } = offer;
 
   return (
-    <div>
+    <div className="main_chef_recommend_container">
+      <div className="chef_recommend_inner_container">
 
-      <div className="card rounded-none bg-base-200">
+        <div className="main_recommend_card_container">
 
-        <div className="main_offered_card_container">
-          <img
-            className="px-0"
-            src={image}
-            alt="offered item"
-          />
-        </div>
+          <div className="main_recommend_img_container">
+            <img src={image}/>
+          </div>
+          <div className="main_recommend_title_container">
+            <h2>{name}</h2>
+            <p>{recipe}</p>
+          </div>
 
-        <div className="mani_offered_content_contaienr">
-          <h2 className="card-title">{name}</h2>
-          <p>{recipe}</p>
+          <div>
 
-          <div className="card-actions">
-            <CardButton
-              cardName={"ADD TO CART"}
-            ></CardButton>
           </div>
 
         </div>
 
       </div>
-
     </div>
   );
 };

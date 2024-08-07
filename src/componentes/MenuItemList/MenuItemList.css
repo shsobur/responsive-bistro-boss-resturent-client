@@ -65,12 +65,6 @@
 
 
 
-
-
-
-
-
-
 @media screen and (max-width: 1024px) {
   .menu_list_image_container {
     width: 20%;
@@ -82,11 +76,6 @@
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
   .menu_list_image_container {
     height: 90%;
@@ -95,35 +84,5 @@
 
   .main_list_title_content_container {
     width: 75%;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 640px) {
-  .menu_list_image_container {
-    height: 90%;
-    width: 30%;
-  }
-
-  .main_list_title_content_container {
-    width: 70%;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 475px) {
-  .addtional_menu_price_container p {
-    padding-top: 20px;
-  }
-
-  .main_list_title_content_container {
-    height: auto;
-    padding-bottom: 10px;
   }
 }

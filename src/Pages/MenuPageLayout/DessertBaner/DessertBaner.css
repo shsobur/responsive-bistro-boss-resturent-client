@@ -36,3 +36,32 @@
   padding: 20px 200px;
   font-family: "Inter", serif;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .dessert_baner_title_container h2 {
+    font-size: 3.4rem;
+  }
+
+  .dessert_baner_title_container p {
+    font-size: 16px;
+    padding: 20px 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .dessert_baner_title_container h2 {
+    font-size: 3.2rem;
+  }
+
+  .dessert_baner_title_container p {
+    font-size: 14px;
+    padding: 20px 20px;
+  }
+}

@@ -74,31 +74,31 @@
 
 .main_menu_baner_container {
   max-width: 1920px;
-  min-width: 345px;
+  min-width: 640px;
   margin: auto;
 }
 
 .main_today_offeref_container {
   max-width: 1320px;
-  min-width: 345px;
+  min-width: 640px;
   margin: auto
 }
 
 .mani_menu_food_baner_container {
   max-width: 1920px;
-  min-width: 345px;
+  min-width: 640px;
   margin: auto;
 }
 
 .main_dessert_baner_contaienr {
   max-width: 1920px;
-  min-width: 345px;
+  min-width: 640px;
   margin: auto;
 }
 
 .main_dessert_list_container {
   max-width: 1320px;
-  min-width: 345px;
+  min-width: 640px;
   margin: auto
 }
 

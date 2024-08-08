@@ -92,18 +92,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1536px) {
   .web_title_name h2 {
     font-size: 1.7rem;
@@ -126,8 +114,6 @@
     font-size: 2.6rem;
   }
 }
-
-
 
 
 
@@ -161,9 +147,6 @@
     font-weight: 600;
   }
 }
-
-
-
 
 
 @media screen and (max-width: 1024px) {
@@ -224,41 +207,8 @@
 }
 
 
-
-
-
 @media screen and (max-width: 768px) {
   #navbar_navigate_container ul {
     width: 60%;
-  }
-}
-
-
-
-@media screen and (max-width: 475px) {
-  .main_nav_content_contaienr {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .web_title_name h2 {
-    font-size: 1.1rem;
-  }
-
-  .web_title_name span {
-    font-size: 14px;
-    letter-spacing: 6px;
-  }
-
-  .main_functional_info_container {
-    gap: 10px;
-  }
-
-  .user_image {
-    font-size: 2.4rem;
-  }
-
-  .hamburger_icon {
-    font-size: 2rem;
   }
 }

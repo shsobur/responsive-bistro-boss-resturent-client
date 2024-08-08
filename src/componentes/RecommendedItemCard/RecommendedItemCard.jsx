@@ -1,3 +1,4 @@
+import CardButton from "../CardButton/CardButton";
 import "../RecommendedItemCard/RecommendedItemCard.css";
 
 const RecommendedItemCard = ({ offer }) => {
@@ -18,7 +19,9 @@ const RecommendedItemCard = ({ offer }) => {
           </div>
 
           <div>
-
+            <CardButton
+              cardName={"ADD TO CART"}
+            ></CardButton>
           </div>
 
         </div>

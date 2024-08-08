@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .main_cardName_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Inter", sans-serif;
 }
 
 .main_cardName_container button {
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 15px;
   color: #bb8506;
   border-radius: 8px;
@@ -19,4 +23,25 @@
   background-color: #1F2937;
   border-bottom: 3px solid #1F2937;
   transition: 0.4s ease-in;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .main_cardName_container button {
+    padding: 6px 15px;
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .main_cardName_container {
+    padding: 0 10px;
+  }
+
+  .main_cardName_container button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }

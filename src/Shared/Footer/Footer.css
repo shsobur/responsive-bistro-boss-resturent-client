@@ -77,15 +77,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1024px) {
   .footer_contact_inner_container h2 {
     font-size: 1.8rem;
@@ -136,50 +127,5 @@
 
   .main_copyright_container h1 {
     font-size: 2vw;
-  }
-}
-
-
-@media screen and (max-width: 640px) {
-  .main_footer_content_container {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .footer_conatact_container {
-    width: 100%;
-  }
-
-  .footer_contact_inner_container {
-    padding: 20px 0;
-  }
-
-  .footer_contact_inner_container h2 {
-    font-size: 1.4rem;
-  }
-
-  .footer_contact_inner_container p {
-    font-size: 14px;
-  }
-
-  .footer_follow_container {
-    width: 100%;
-  }
-
-  .footer_follow_inner_container {
-    padding: 20px 0;
-  }
-
-  .footer_follow_inner_container h2 {
-    font-size: 1.4rem;
-  }
-
-  .footer_follow_inner_container p {
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  .footer_social_icons {
-    font-size: 1.6rem;
   }
 }

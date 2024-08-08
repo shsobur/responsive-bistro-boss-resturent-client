@@ -121,7 +121,9 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="login_container">SING OUT</div>
+          <div className="login_container">
+            <Link to="/singup">SING IN</Link>
+          </div>
 
           <div className="user_image">
             <IoMdContact />

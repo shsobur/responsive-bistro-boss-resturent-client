@@ -1,0 +1,13 @@
+#main_sing_in_section_container{
+  height: 80%;
+  width: 90%;
+  box-shadow: 5px 5px 10px 2px #15151578;
+}
+
+#main_sing_in_section_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 20px;
+}

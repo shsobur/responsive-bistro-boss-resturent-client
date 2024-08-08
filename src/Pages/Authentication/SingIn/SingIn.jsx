@@ -6,12 +6,17 @@ import { TiSocialGithubCircular } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 import authImage from "../../../assets/others/authentication2.png";
+import { IoHomeOutline } from "react-icons/io5";
 
 const SingIn = () => {
   return (
     <div className="main_authentication_section_container">
       <div className="main_authentication_section_bg_container">
         <div id="main_sing_in_section_container">
+
+        <div className="home_icon_in">
+            <Link to="/"><IoHomeOutline /></Link>
+          </div>
 
           <div className="main_authentication_form_container">
             <form>

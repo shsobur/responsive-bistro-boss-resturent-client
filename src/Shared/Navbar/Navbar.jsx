@@ -122,7 +122,7 @@ const Navbar = () => {
           </div>
 
           <div className="login_container">
-            <Link to="/singup">SING IN</Link>
+            <Link to="/singin">SING IN</Link>
           </div>
 
           <div className="user_image">

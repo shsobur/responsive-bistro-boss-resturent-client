@@ -6,6 +6,7 @@ import { TiSocialGithubCircular } from "react-icons/ti";
 import { IoLogoGoogle } from "react-icons/io";
 
 import authImage from "../../../assets/others/authentication2.png"
+import { IoHomeOutline } from "react-icons/io5";
 
 const SingUp = () => {
   return (
@@ -13,6 +14,10 @@ const SingUp = () => {
       <div className="main_authentication_section_bg_container">
 
         <div id="main_sing_up_section_container">
+
+          <div className="home_icon_up">
+            <Link to="/"><IoHomeOutline /></Link>
+          </div>
 
           <div className="main_authentication_form_container">
             <form>
@@ -50,11 +55,13 @@ const SingUp = () => {
                 <div className="authentication_form_text_and_icon_container">
                   <h3>Already registered? Go to <Link to="/singin"><span className="underline">Sing In</span></Link></h3>
                   <p>Or sign up with</p>
+
                   <div className="social_icons">
                     <IoLogoGoogle />
                     <CiFacebook />
                     <TiSocialGithubCircular />
                   </div>
+
                 </div>
               </div>
 

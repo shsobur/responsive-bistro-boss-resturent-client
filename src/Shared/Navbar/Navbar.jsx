@@ -3,20 +3,44 @@ import { Link, NavLink } from "react-router-dom";
 import { IoMdContact } from "react-icons/io";
 import { MdOutlineMenu } from "react-icons/md";
 import { GoX } from "react-icons/go";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { TiShoppingCart } from "react-icons/ti";
+import { AuthContext } from "../../componentes/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
+  const { logOut, user } = useContext(AuthContext);
 
   const handelHamburgerIcon = () => {
     setMenuIcon(!menuIcon);
   };
 
+  const handelSingOut = () => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You went to Logout",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, LogOut!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        logOut().then(() => {
+          Swal.fire({
+            title: "LogOut",
+            text: "LogOut successfully",
+            icon: "success",
+          });
+        });
+      }
+    });
+  };
+
   return (
     <div className="main_navbar_container">
       <nav className="main_nav_content_contaienr">
-
         <div className="web_title_name">
           <Link to="/">
             <h2>BISTRO BOSS</h2>
@@ -33,7 +57,6 @@ const Navbar = () => {
           }
         >
           <ul className="navbar_navigate_inner_container">
-
             <li onClick={handelHamburgerIcon}>
               <NavLink
                 to="/"
@@ -106,10 +129,8 @@ const Navbar = () => {
         </div>
 
         <div className="main_functional_info_container">
-
           <div className="cart_container">
             <button className="btn bg-[#00000078] px-2">
-
               <div className="text-2xl text-[#2daa2d]">
                 <TiShoppingCart />
               </div>
@@ -117,19 +138,27 @@ const Navbar = () => {
               <div className="badge bg-[#26af26] text-[#000000] font-bold">
                 +99
               </div>
-
             </button>
           </div>
 
           <div className="login_container">
-            <Link to="/singin">SING IN</Link>
+            {user ? (
+              <div onClick={handelSingOut}>LOG OUT</div>
+            ) : (
+              <div>
+                <Link to="/singin">SING IN</Link>
+              </div>
+            )}
           </div>
 
           <div className="user_image">
             <IoMdContact />
           </div>
 
-          <div onClick={handelHamburgerIcon} className="main_menu_icon_container">
+          <div
+            onClick={handelHamburgerIcon}
+            className="main_menu_icon_container"
+          >
             {menuIcon ? (
               <div className="hamburger_icon">
                 <MdOutlineMenu />
@@ -140,7 +169,6 @@ const Navbar = () => {
               </div>
             )}
           </div>
-
         </div>
       </nav>
     </div>

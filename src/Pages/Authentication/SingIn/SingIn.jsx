@@ -7,10 +7,14 @@ import { Link } from "react-router-dom";
 
 import authImage from "../../../assets/others/authentication2.png";
 import { IoHomeOutline } from "react-icons/io5";
+import ScrollToTop from "../../../componentes/ScrollToTop/ScrollToTop";
 
 const SingIn = () => {
   return (
-    <div className="main_authentication_section_container">
+    <>
+      <ScrollToTop></ScrollToTop>
+
+      <div className="main_authentication_section_container">
       <div className="main_authentication_section_bg_container">
         <div id="main_sing_in_section_container">
 
@@ -77,6 +81,7 @@ const SingIn = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -39,7 +39,7 @@ const Location = () => {
             <div className="location_card_bottom_border_container">
               <div className="location_card_inner_text_container">
                 <h3>ADDRESS</h3>
-                <p>Sodor road, Bhola Sodor, Bhola</p>
+                <p>Sodor-road, Bhola Sodor, Bhola</p>
               </div>
             </div>
 

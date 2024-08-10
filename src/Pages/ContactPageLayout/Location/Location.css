@@ -1,0 +1,99 @@
+.main_contact_location_card_info_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+
+.main_location_single_cart_container {
+  height: 100%;
+  width: 100%;
+}
+
+.main_location_single_cart_inner_container {
+  height: 100%;
+  width: 100%;
+}
+
+.location_card_top_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D1A054;
+}
+
+.location_card_top_icon_container p {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.location_card_bottom_border_container {
+  height: auto;
+  width: 100%;
+  padding: 0 30px 30px 30px;
+  border-right: 2px solid #E8E8E8;
+  border-left: 2px solid #E8E8E8;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.location_card_inner_text_container {
+  height: 200px;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+
+.location_card_inner_text_container h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 40px 0 20px 0;
+  font-family: "Inter", serif;
+}
+
+.location_card_inner_text_container p {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .location_card_top_icon_container p {
+    font-size: 1.8rem;
+  }
+
+  .location_card_bottom_border_container {
+    padding: 0 20px 20px 20px;
+  }
+
+  .location_card_inner_text_container {
+    height: 180px;
+  }
+
+  .location_card_inner_text_container h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .location_card_inner_text_container p {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_contact_location_card_info_container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 20px;
+  }
+
+  .location_card_inner_text_container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .location_card_inner_text_container p {
+    font-size: 1rem;
+  }
+}

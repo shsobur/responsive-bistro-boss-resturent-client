@@ -1,0 +1,35 @@
+.main_contact_bg_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background-image: url("https://i.postimg.cc/pd8sDjDw/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+  width: 70%;
+  color: #ffffff;
+  text-align: center;
+  background-color: #15151590;
+}
+
+.contact_title_container h2 {
+  font-size: 5rem;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
+
+.contact_title_container p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Cinzel", serif;
+}

@@ -117,6 +117,12 @@
   margin: auto;
 }
 
+.main_contact_message_container {
+  max-width: 1320px;
+  min-width: 640px;
+  margin: auto;
+}
+
 
 
 

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import ContactBaner from "./ContactBaner/ContactBaner";
 import Location from "./Location/Location";
 import ScrollToTop from "../../componentes/ScrollToTop/ScrollToTop";
+import ContactMessage from "./ContactMessage/ContactMessage";
 
 const ContactPageLayout = () => {
   return (
@@ -14,6 +15,7 @@ const ContactPageLayout = () => {
 
       <ContactBaner></ContactBaner>
       <Location></Location>
+      <ContactMessage></ContactMessage>
     </div>
   );
 };

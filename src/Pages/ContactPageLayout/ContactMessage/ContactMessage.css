@@ -1,0 +1,47 @@
+.main_massage_container {
+  border: 2px solid red;
+  padding: 50px;
+  background-color: #F3F3F3;
+  display: grid;
+  column-gap: 100px;
+  row-gap: 50px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#box-1 {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+#box-1 input {
+  width: 100%;
+}
+
+#box-2 {
+  grid-column-start: 7;
+  grid-column-end: -1;
+}
+
+#box-2 input {
+  width: 100%;
+}
+
+#box-3 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+#box-3 input {
+  width: 100%;
+}
+
+#box-4 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+#box-4 input {
+  width: 100%;
+  width: 100%;
+}

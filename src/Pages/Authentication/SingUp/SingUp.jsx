@@ -5,21 +5,24 @@ import ScrollToTop from "../../../componentes/ScrollToTop/ScrollToTop";
 import { AuthContext } from "../../../componentes/AuthProvider/AuthProvider";
 
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // React icons
-import { CiFacebook } from "react-icons/ci";
-import { TiSocialGithubCircular } from "react-icons/ti";
-import { IoLogoGoogle } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
+import { TbBrandGithub } from "react-icons/tb";
+import { PiFacebookLogoBold, PiGoogleLogoBold } from "react-icons/pi";
 
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const SingUp = () => {
-  const {singUpUser} = useContext(AuthContext);
+  const {singUpUser, googleSingUp} = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
 
   const {
     register,
@@ -52,13 +55,31 @@ const SingUp = () => {
         title: "Signed Up successfully"
       });
 
-      navigate("/");
+      navigate(from, {replace: true});
+
     })
   };
+
+  const handelGoogleSingUp = () => {
+    googleSingUp()
+    .then(result => {
+      const googleSingUpUser = result.user
+      console.log(googleSingUpUser);
+      navigate(from, {replace: true});
+    })
+    .catch(error => {
+      console.log(error);
+    })
+
+  }
 
   return (
     <>
       <ScrollToTop></ScrollToTop>
+
+      <Helmet>
+        <title>Bistro Boss Restaurant| Sing Up</title>
+      </Helmet>
 
       <div className="main_authentication_section_container">
         <div className="main_authentication_section_bg_container">
@@ -119,7 +140,11 @@ const SingUp = () => {
                         type="password"
                         name="password"
                         placeholder="Enter your password"
-                        {...register("password", { required: true })}
+                        {...register(
+                          "password",
+                          { required: true, minLength: 6, maxLength: 20 },
+                          { required: true }
+                        )}
                       />
 
                       <div>
@@ -131,7 +156,7 @@ const SingUp = () => {
 
                         {errors.password?.type === "minLength" && (
                           <span className="text-red-500 font-medium">
-                            Password must be at least 6 characters
+                            Password must be at least 6 characters -_-
                           </span>
                         )}
 
@@ -160,9 +185,9 @@ const SingUp = () => {
                     <p>Or sign up with</p>
 
                     <div className="social_icons">
-                      <IoLogoGoogle />
-                      <CiFacebook />
-                      <TiSocialGithubCircular />
+                      <div onClick={handelGoogleSingUp}><PiGoogleLogoBold /></div>
+                      <PiFacebookLogoBold />
+                      <TbBrandGithub />
                     </div>
                   </div>
                 </div>

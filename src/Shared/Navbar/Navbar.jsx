@@ -12,6 +12,8 @@ const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const { logOut, user } = useContext(AuthContext);
 
+  const useImg = user?.photoURL;
+
   const handelHamburgerIcon = () => {
     setMenuIcon(!menuIcon);
   };
@@ -122,8 +124,14 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <div className="menubar_sing_container">
-              <h2>SING OUT</h2>
+            <div onClick={handelHamburgerIcon} className="menubar_sing_container">
+              {user ? (
+                <div onClick={handelSingOut}>LOG OUT</div>
+              ) : (
+                <div>
+                  <Link to="/singin">SING IN</Link>
+                </div>
+              )}
             </div>
           </ul>
         </div>
@@ -152,7 +160,9 @@ const Navbar = () => {
           </div>
 
           <div className="user_image">
-            <IoMdContact />
+            {
+              user ? <img className="sing_in_user_img" src={useImg} alt="user image" /> : <IoMdContact />
+            }
           </div>
 
           <div

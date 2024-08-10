@@ -9,6 +9,7 @@ import MenuPageLayout from "../Pages/MenuPageLayout/MenuPageLayout";
 import ShopPageLayout from "../Pages/ShopPageLayout/ShopPageLayout";
 import SingUp from "../Pages/Authentication/SingUp/SingUp";
 import SingIn from "../Pages/Authentication/SingIn/SingIn";
+import PrivetRoutes from "./PrivetRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <DashboardPageLayout></DashboardPageLayout>
+        element: <PrivetRoutes><DashboardPageLayout></DashboardPageLayout></PrivetRoutes>
       },
       {
         path: "/menu",

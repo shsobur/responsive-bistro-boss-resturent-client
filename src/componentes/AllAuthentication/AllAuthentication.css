@@ -116,6 +116,16 @@
   cursor: pointer;
 }
 
+.password_cheackbox {
+  color: #737373;
+  font-size: 13px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+}
+
 
 
 .main_authentication_image_container {
@@ -127,7 +137,6 @@
   height: 100%;
   width: 100%;
 }
-
 
 
 @media screen and (max-width: 1024px) {

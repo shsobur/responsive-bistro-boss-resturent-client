@@ -10,24 +10,28 @@ const ContactMessage = () => {
       ></SectionTitle>
 
       <div className="main_massage_container">
-        <div id="box-1">
+        <div className="massage_box_container" id="box-1">
           <p>Name*</p>
-          <input type="text" name="name" />
+          <input type="text" name="name" placeholder="Enter your name" />
         </div>
 
-        <div id="box-2">
+        <div className="massage_box_container" id="box-2">
           <p>Email*</p>
-          <input type="email" name="email" />
+          <input type="email" name="email" placeholder="Enter your email" />
         </div>
 
-        <div id="box-3">
+        <div className="massage_box_container" id="box-3">
           <p>Phone*</p>
-          <input type="text" name="phone" />
+          <input type="text" name="phone" placeholder="Enter your phone" />
         </div>
 
-        <div id="box-4">
+        <div className="massage_box_container" id="box-4">
           <p>Message*</p>
-          <input type="text" name="message" />
+          <textarea placeholder="Write your message here"></textarea>
+        </div>
+
+        <div className="message_sub_container">
+          <input type="submit" value="Send Message" />
         </div>
 
       </div>

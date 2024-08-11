@@ -1,8 +1,8 @@
 import CardButton from "../CardButton/CardButton";
 import "../RecommendedItemCard/RecommendedItemCard.css";
 
-const RecommendedItemCard = ({ offer }) => {
-  const { name, image, recipe } = offer;
+const RecommendedItemCard = ({ cardItem }) => {
+  const { name, image, recipe } = cardItem;
 
   return (
     <div className="main_chef_recommend_container">

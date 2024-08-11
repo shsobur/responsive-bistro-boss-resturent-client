@@ -124,8 +124,26 @@
 }
 
 
+/* Shop Page main style */
+
+.main_shop_page_baner_container {
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+}
+
+.main_shop_navbar_container {
+  max-width: 1320px;
+  min-width: 640px;
+  margin: auto;
+}
 
 
+.main_food_card_container {
+  max-width: 1320px;
+  min-width: 640px;
+  margin: auto;
+}
 
 
 

@@ -21,7 +21,7 @@ const ChefRecommended = () => {
         <div className="chef_recommend_card_box_inner_container">
 
           {
-            offered.map(offer => <RecommendedItemCard key={offer._id} offer={offer}></RecommendedItemCard>)
+            offered.map(offer => <RecommendedItemCard key={offer._id} cardItem={offer}></RecommendedItemCard>)
           }
 
         </div>

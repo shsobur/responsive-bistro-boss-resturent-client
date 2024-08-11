@@ -1,16 +1,16 @@
-.main_contact_bg_container {
+.main_shop_bg_container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 90vh;
   width: 100%;
-  background-image: url("https://i.postimg.cc/pd8sDjDw/banner.jpg");
+  background-image: url("https://i.postimg.cc/J0LhByZ1/banner2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contact_title_container {
+.shop_title_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,47 +22,45 @@
   background-color: #15151590;
 }
 
-.contact_title_container h2 {
+.shop_title_container h2 {
   font-size: 5rem;
   font-family: "Cinzel", serif;
   font-weight: 700;
 }
 
-.contact_title_container p {
+.shop_title_container p {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: "Cinzel", serif;
 }
 
-
-
 @media screen and (max-width: 1024px) {
-  .contact_title_container {
+  .shop_title_container {
     height: 45%;
     width: 90%;
   }
 
-  .contact_title_container h2 {
+  .shop_title_container h2 {
     font-size: 4.5rem;
   }
 
-  .contact_title_container p {
+  .shop_title_container p {
     font-size: 1.2rem;
   }
 }
 
 
 @media screen and (max-width: 768px) {
-  .contact_title_container {
+  .shop_title_container {
     height: 40%;
     width: 90%;
   }
 
-  .contact_title_container h2 {
+  .shop_title_container h2 {
     font-size: 4.2rem;
   }
 
-  .contact_title_container p {
+  .shop_title_container p {
     font-size: 1rem;
   }
 }

@@ -10,6 +10,11 @@ import ShopPageLayout from "../Pages/ShopPageLayout/ShopPageLayout";
 import SingUp from "../Pages/Authentication/SingUp/SingUp";
 import SingIn from "../Pages/Authentication/SingIn/SingIn";
 import PrivetRoutes from "./PrivetRoutes";
+import ShopSaladCard from "../Pages/ShopPageLayout/ShopNavbar/ShopSaladCard/ShopSaladCard";
+import ShopPizzaCard from "../Pages/ShopPageLayout/ShopNavbar/ShopPizzaCard/ShopPizzaCard";
+import ShopSoupCard from "../Pages/ShopPageLayout/ShopNavbar/ShopSoupCard/ShopSoupCard";
+import ShopDessertCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDessertCard/ShopDessertCard";
+import ShopDrinkCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDrinkCard/ShopDrinkCard";
 
 export const router = createBrowserRouter([
   {
@@ -34,7 +39,29 @@ export const router = createBrowserRouter([
       },
       {
         path: "/shop",
-        element: <ShopPageLayout></ShopPageLayout>
+        element: <ShopPageLayout></ShopPageLayout>,
+        children: [
+          {
+            index: true,
+            element: <ShopSaladCard></ShopSaladCard>
+          },
+          {
+            path: "pizzacard",
+            element: <ShopPizzaCard></ShopPizzaCard>
+          },
+          {
+            path: "soupcard",
+            element: <ShopSoupCard></ShopSoupCard>
+          },
+          {
+            path: "dessertcard",
+            element: <ShopDessertCard></ShopDessertCard>
+          },
+          {
+            path: "drinkcard",
+            element: <ShopDrinkCard></ShopDrinkCard>
+          }
+        ]
       },
       {
         path: "/singup",

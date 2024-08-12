@@ -7,10 +7,12 @@ import { useContext, useState } from "react";
 import { TiShoppingCart } from "react-icons/ti";
 import { AuthContext } from "../../componentes/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import useCart from "../../Hook/useCart/useCart";
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const { logOut, user } = useContext(AuthContext);
+  const [cart] = useCart();
 
   const useImg = user?.photoURL;
 
@@ -144,7 +146,7 @@ const Navbar = () => {
               </div>
 
               <div className="badge bg-[#26af26] text-[#000000] font-bold">
-                +99
+                {cart.length}
               </div>
             </button>
           </div>

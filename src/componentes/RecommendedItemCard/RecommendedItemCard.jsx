@@ -2,7 +2,7 @@ import CardButton from "../CardButton/CardButton";
 import "../RecommendedItemCard/RecommendedItemCard.css";
 
 const RecommendedItemCard = ({ cardItem }) => {
-  const { name, image, recipe } = cardItem;
+  const { name, image, recipe, _id} = cardItem;
 
   return (
     <div className="main_chef_recommend_container">
@@ -21,6 +21,10 @@ const RecommendedItemCard = ({ cardItem }) => {
           <div>
             <CardButton
               cardName={"ADD TO CART"}
+              foodItem={cardItem}
+              itemId={_id}
+              itemName={name}
+              itemImage={image}
             ></CardButton>
           </div>
 

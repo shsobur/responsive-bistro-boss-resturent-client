@@ -1,7 +1,24 @@
+import { Outlet } from "react-router-dom";
+import DashBoardNavbar from "./DashBoardNavbar/DashBoardNavbar";
+import ScrollToTop from "../../componentes/ScrollToTop/ScrollToTop";
+import { Helmet } from "react-helmet-async";
+
 const DashboardPageLayout = () => {
   return (
-    <div>
-      <h2 className="text-4xl font-semibold text-center mt-80">Dashboard working on prosece...</h2>
+    <div className="flex">
+      <Helmet>
+        <title>Bistro Boss Restaurant | Dashboard</title>
+      </Helmet>
+
+      <ScrollToTop></ScrollToTop>
+
+      <div>
+        <DashBoardNavbar></DashBoardNavbar>
+      </div>
+      <div className="flex-1">
+        <Outlet></Outlet>
+      </div>
+
     </div>
   );
 };

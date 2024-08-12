@@ -6,12 +6,13 @@ const Main = () => {
   const location = useLocation();
   const noNavAndFooterSingInPage = location.pathname.includes("singin");
   const noNavAndFooterSingUpPage = location.pathname.includes("singup");
+  const noNavAndFooterDashboard = location.pathname.includes("dashboard");
 
   return (
     <div>
-      {noNavAndFooterSingInPage || noNavAndFooterSingUpPage || <Navbar></Navbar>}
+      {noNavAndFooterSingInPage || noNavAndFooterSingUpPage || noNavAndFooterDashboard || <Navbar></Navbar>}
       <Outlet></Outlet>
-      {noNavAndFooterSingInPage || noNavAndFooterSingUpPage || <Footer></Footer>}
+      {noNavAndFooterSingInPage || noNavAndFooterSingUpPage || noNavAndFooterDashboard || <Footer></Footer>}
     </div>
   );
 };

@@ -1,0 +1,54 @@
+.main_dashboard_navbar_container {
+  height: 100vh;
+  width: 300px;
+  padding: 0 30px;
+  padding-top: 30px;
+  background-color: #D1A054;
+}
+
+.main_web_name_container {
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+.main_web_name_container h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.main_web_name_container h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+
+.main_dashboard_navigation_container {
+  margin-top: 60px;
+}
+
+.nav_part_one {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.single_nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-bottom: 20px;
+  font-family: "Cinzel", serif;
+}
+
+.single_nav_container h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.single_nav_container p {
+  font-size: 1.8rem;
+}
+
+.nav_part_two {
+  margin-top: 25px;
+}

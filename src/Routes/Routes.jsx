@@ -15,6 +15,8 @@ import ShopPizzaCard from "../Pages/ShopPageLayout/ShopNavbar/ShopPizzaCard/Shop
 import ShopSoupCard from "../Pages/ShopPageLayout/ShopNavbar/ShopSoupCard/ShopSoupCard";
 import ShopDessertCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDessertCard/ShopDessertCard";
 import ShopDrinkCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDrinkCard/ShopDrinkCard";
+import UserHome from "../Pages/DashboardPageLayout/DashboardPages/UserHome/UserHome";
+import MyCart from "../Pages/DashboardPageLayout/DashboardPages/MyCart/MyCart";
 
 export const router = createBrowserRouter([
   {
@@ -73,4 +75,19 @@ export const router = createBrowserRouter([
       }
     ]
   },
+
+  {
+    path: "dashboard",
+    element: <DashboardPageLayout></DashboardPageLayout>,
+    children: [
+      {
+        path: "userhome",
+        element: <UserHome></UserHome>
+      },
+      {
+        path: "mycart",
+        element: <MyCart></MyCart>
+      },
+    ]
+  }
 ]);

@@ -140,15 +140,17 @@ const Navbar = () => {
 
         <div className="main_functional_info_container">
           <div className="cart_container">
-            <button className="btn bg-[#00000078] px-2">
-              <div className="text-2xl text-[#2daa2d]">
-                <TiShoppingCart />
-              </div>
+            <Link to="/dashboard/mycart">
+              <button className="btn bg-[#00000078] px-2">
+                <div className="text-2xl text-[#2daa2d]">
+                  <TiShoppingCart />
+                </div>
 
-              <div className="badge bg-[#26af26] text-[#000000] font-bold">
-                {cart.length}
-              </div>
-            </button>
+                <div className="badge bg-[#26af26] text-[#000000] font-bold">
+                  {cart.length}
+                </div>
+              </button>
+            </Link>
           </div>
 
           <div className="login_container">

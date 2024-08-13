@@ -146,6 +146,13 @@
 }
 
 
+/* Deshboard main style */
+
+.main_dashboard_container {
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+}
 
 
 

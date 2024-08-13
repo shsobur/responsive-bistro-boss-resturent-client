@@ -8,7 +8,7 @@ import axios from "axios";
 import useAxios from "../../Hook/useAxios/useAxios";
 import useCart from "../../Hook/useCart/useCart";
 
-const CardButton = ({cardName, foodItem, itemId, itemName, itemImage}) => {
+const CardButton = ({cardName, foodItem, itemId, itemName, itemImage, itemPrice}) => {
   const {user} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,9 +20,10 @@ const CardButton = ({cardName, foodItem, itemId, itemName, itemImage}) => {
 
       const menuItem = {
         menuItemId: itemId,
-        email: user.email,
-        itemName,
-        itemImage,
+        email: user?.email,
+        name: itemName,
+        image :itemImage,
+        price: itemPrice,
       }
 
       axiosSecure.post("/carts", menuItem)

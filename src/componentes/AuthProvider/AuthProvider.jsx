@@ -8,6 +8,8 @@ const AuthProvider = ({children}) => {
   const [user, setUser ] = useState(null);
   const [loding, setLoding] = useState(false);
 
+  console.log(user?.email)  
+
   const googleProvider = new GoogleAuthProvider();
 
   const singUpUser = (email, password) => {

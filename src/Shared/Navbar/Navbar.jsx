@@ -89,7 +89,7 @@ const Navbar = () => {
 
             <li onClick={handelHamburgerIcon}>
               <NavLink
-                to="dashboard"
+                to="/dashboard"
                 className={({ isActive }) =>
                   isActive
                     ? "text-[#EEFF25] font-extrabold border-[#ffffff] border-b-2"

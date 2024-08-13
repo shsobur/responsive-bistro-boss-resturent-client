@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 const DashboardPageLayout = () => {
   return (
-    <div className="flex">
+    <div className="main_dashboard_container flex">
       <Helmet>
         <title>Bistro Boss Restaurant | Dashboard</title>
       </Helmet>

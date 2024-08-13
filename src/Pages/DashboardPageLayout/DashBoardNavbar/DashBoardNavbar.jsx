@@ -1,13 +1,16 @@
 import { FaCalendarAlt, FaHome } from "react-icons/fa";
-import "../DashBoardNavbar/DashBoardNavbar.css";
 import { GiHamburgerMenu, GiWallet } from "react-icons/gi";
 import { TiShoppingCart } from "react-icons/ti";
 import { MdMarkEmailRead, MdReviews } from "react-icons/md";
 import { BiSolidBookContent } from "react-icons/bi";
 import { SiShopee } from "react-icons/si";
 import { NavLink } from "react-router-dom";
+import "../DashBoardNavbar/DashBoardNavbar.css";
+import useCart from "../../../Hook/useCart/useCart";
 
 const DashBoardNavbar = () => {
+  const [cart] = useCart()
+
   return (
     <div className="main_dashboard_navbar_container">
       <div className="main_web_name_container">
@@ -77,7 +80,7 @@ const DashBoardNavbar = () => {
               <p>
                 <TiShoppingCart />
               </p>
-              <h4>MY CART</h4>
+              <h4>MY CART <span className="text-[#26af26] font-sans text-lg font-bold">({cart.length})</span></h4>
             </li>
           </NavLink>
 

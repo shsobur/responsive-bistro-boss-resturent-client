@@ -1,14 +1,14 @@
-import "../UserHome/UserHome.css";
+import "../Payment/Payment.css";
 import "../../../../componentes/AllDashboardPageStyle/AllDashboardPageStyle.css";
 
-const UserHome = () => {
+const Payment = () => {
   return (
     <div className="main_dashboard_page_outer_container">
       <div className="main_dashboard_page_inner_container">
-        <h2>Hello  User Home</h2>
+        <h2>Hello Payment History</h2>
       </div>
     </div>
   );
 };
 
-export default UserHome;
+export default Payment;

@@ -17,6 +17,15 @@ import ShopDessertCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDessertCard/
 import ShopDrinkCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDrinkCard/ShopDrinkCard";
 import UserHome from "../Pages/DashboardPageLayout/DashboardPages/UserHome/UserHome";
 import MyCart from "../Pages/DashboardPageLayout/DashboardPages/MyCart/MyCart";
+import Reservation from "../Pages/DashboardPageLayout/DashboardPages/Reservation/Reservation";
+import Payment from "../Pages/DashboardPageLayout/DashboardPages/Payment/Payment";
+import AddReview from "../Pages/DashboardPageLayout/DashboardPages/AddReview/AddReview";
+import Booking from "../Pages/DashboardPageLayout/DashboardPages/Booking/Booking";
+import AdminHome from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AdminHome/AdminHome";
+import AddItem from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AddItem/AddItem";
+import ManageItem from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/ManageItem/ManageItem";
+import ManageBooking from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/ManageBooking/ManageBooking";
+import AllUser from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AllUser/AllUser";
 
 export const router = createBrowserRouter([
   {
@@ -30,10 +39,6 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPageLayout></ContactPageLayout>
-      },
-      {
-        path: "/dashboard",
-        element: <PrivetRoutes><DashboardPageLayout></DashboardPageLayout></PrivetRoutes>
       },
       {
         path: "/menu",
@@ -76,10 +81,13 @@ export const router = createBrowserRouter([
     ]
   },
 
+  // New Routes__
   {
     path: "dashboard",
-    element: <DashboardPageLayout></DashboardPageLayout>,
+    element: <PrivetRoutes><DashboardPageLayout></DashboardPageLayout></PrivetRoutes>,
     children: [
+
+      // Route for user__
       {
         path: "userhome",
         element: <UserHome></UserHome>
@@ -88,6 +96,45 @@ export const router = createBrowserRouter([
         path: "mycart",
         element: <MyCart></MyCart>
       },
+      {
+        path: "reservation",
+        element: <Reservation></Reservation>
+      },
+      {
+        path: "payment",
+        element: <Payment></Payment>
+      },
+      {
+        path: "addreview",
+        element: <AddReview></AddReview>
+      },
+      {
+        path: "mybooking",
+        element: <Booking></Booking>
+      },
+
+      // Route for admin__
+
+      {
+        path: "adminhome",
+        element: <AdminHome></AdminHome>
+      },
+      {
+        path: "additem",
+        element: <AddItem></AddItem>
+      },
+      {
+        path: "manageitem",
+        element: <ManageItem></ManageItem>
+      },
+      {
+        path: "managebooking",
+        element: <ManageBooking></ManageBooking>
+      },
+      {
+        path: "alluser",
+        element: <AllUser></AllUser>
+      }
     ]
   }
 ]);

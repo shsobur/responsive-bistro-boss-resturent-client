@@ -2,8 +2,6 @@ import "../SingIn/SingIn.css";
 import "../../../componentes/AllAuthentication/AllAuthentication.css";
 
 // React icons
-import { PiFacebookLogoBold, PiGoogleLogoBold } from "react-icons/pi";
-import { TbBrandGithub } from "react-icons/tb";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import authImage from "../../../assets/others/authentication2.png";
@@ -14,9 +12,10 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../../componentes/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import SocialLogin from "../../../componentes/SocialLogin/SocialLogin";
 
 const SingIn = () => {
-  const { singInUser, googleSingUp } = useContext(AuthContext);
+  const { singInUser } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const [pass, setPass] = useState(false);
   const navigate = useNavigate();
@@ -67,18 +66,6 @@ const SingIn = () => {
         setError("invalid! username or password, please try again");
       });
 
-  };
-
-  const handleGooleSingIn = () => {
-    googleSingUp()
-    .then(result => {
-      const googlrSingInUser = result.user
-      console.log (googlrSingInUser);
-      navigate(from, {relative: true});
-    })
-    .catch(error => {
-      console.log (error);
-    });
   };
 
   return (
@@ -165,11 +152,7 @@ const SingIn = () => {
                       </Link>
                     </h3>
                     <p>Or sign up with</p>
-                    <div className="social_icons">
-                      <div onClick={handleGooleSingIn}><PiGoogleLogoBold /></div>
-                      <PiFacebookLogoBold />
-                      <TbBrandGithub />
-                    </div>
+                    <SocialLogin></SocialLogin>
                   </div>
                 </div>
               </form>

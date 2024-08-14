@@ -1,6 +1,6 @@
 import auth from "../firebaseConfig/firebase.config";
 import { createContext, useEffect, useState } from "react";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 
 export const AuthContext = createContext(null);
 
@@ -20,6 +20,12 @@ const AuthProvider = ({children}) => {
   const singInUser = (email, password) => {
     setLoding(true);
     return signInWithEmailAndPassword(auth, email, password);
+  }
+
+  const updateUserProfile = (name, photo) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name, photoURL: photo 
+    })
   }
 
   const googleSingUp = () => {
@@ -45,6 +51,7 @@ const AuthProvider = ({children}) => {
     user,
     singUpUser,
     singInUser,
+    updateUserProfile,  
     googleSingUp,
     logOut,
     loding,

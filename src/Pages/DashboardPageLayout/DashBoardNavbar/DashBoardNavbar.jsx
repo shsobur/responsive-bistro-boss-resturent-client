@@ -122,8 +122,8 @@ const DashBoardNavbar = () => {
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-extrabold"
-                : "text-[#151515] font-extrabold"
+                ? "text-[#151515] font-extrabold"
+                : "hover:text-[#ffffff] font-extrabold"
             }
           >
             <li className="single_nav_container">
@@ -138,8 +138,8 @@ const DashBoardNavbar = () => {
             to="/menu"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-extrabold"
-                : "text-[#151515] font-extrabold"
+                ? "text-[#151515] font-extrabold"
+                : "hover:text-[#ffffff] font-extrabold"
             }
           >
             <li className="single_nav_container">
@@ -154,8 +154,8 @@ const DashBoardNavbar = () => {
             to="/shop"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-extrabold"
-                : "text-[#151515] font-extrabold"
+                ? "text-[#151515] font-extrabold"
+                : "hover:text-[#ffffff] font-extrabold"
             }
           >
             <li className="single_nav_container">
@@ -170,8 +170,8 @@ const DashBoardNavbar = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-extrabold"
-                : "text-[#151515] font-extrabold"
+                ? "text-[#151515] font-extrabold"
+                : "hover:text-[#ffffff] font-extrabold"
             }
           >
             <li className="single_nav_container">

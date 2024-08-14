@@ -9,16 +9,17 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // React icons
 import { IoHomeOutline } from "react-icons/io5";
-import { TbBrandGithub } from "react-icons/tb";
-import { PiFacebookLogoBold, PiGoogleLogoBold } from "react-icons/pi";
 
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
+import useAxiosPublic from "../../../Hook/useAxiosPublic/useAxiosPublic";
+import SocialLogin from "../../../componentes/SocialLogin/SocialLogin";
 
 const SingUp = () => {
-  const {singUpUser, googleSingUp} = useContext(AuthContext);
+  const {singUpUser, updateUserProfile} = useContext(AuthContext);
+  const axiosPublic  = useAxiosPublic();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -31,6 +32,8 @@ const SingUp = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    const name = data.name;
+    const photo = data.photo;
     const email = data.email;
     const password = data.password;
 
@@ -39,39 +42,42 @@ const SingUp = () => {
       const singUpUser = result.user
       console.log (singUpUser);
 
-      const Toast = Swal.mixin({
-        toast: true,
-        position: "top-end",
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.onmouseenter = Swal.stopTimer;
-          toast.onmouseleave = Swal.resumeTimer;
+      updateUserProfile(name, photo)
+      .then(() => {
+        const useInfo = {
+          name: name,
+          email: email
         }
-      });
-      Toast.fire({
-        icon: "success",
-        title: "Signed Up successfully"
-      });
 
-      navigate(from, {replace: true});
+        axiosPublic.post("/user", useInfo)
+        .then(res => {
+          if (res.data.insertedId) {
+            const Toast = Swal.mixin({
+              toast: true,
+              position: "top-end",
+              showConfirmButton: false,
+              timer: 3000,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+              }
+            });
+            Toast.fire({
+              icon: "success",
+              title: "Signed Up successfully"
+            });
 
+            navigate(from, {replace: true});
+
+          }
+        })
+        .catch(error=> {
+          console.log(error, "faild");
+        })
+      })
     })
   };
-
-  const handelGoogleSingUp = () => {
-    googleSingUp()
-    .then(result => {
-      const googleSingUpUser = result.user
-      console.log(googleSingUpUser);
-      navigate(from, {replace: true});
-    })
-    .catch(error => {
-      console.log(error);
-    })
-
-  }
 
   return (
     <>
@@ -111,6 +117,24 @@ const SingUp = () => {
                         {errors.name && (
                           <span className="text-red-500 font-medium">
                             Name is required
+                          </span>
+                        )}
+                      </div>
+                    </div>
+
+                    <div className="authentication_input_section_container">
+                      <p>Photo</p>
+                      <input
+                        type="text"
+                        name="photo"
+                        placeholder="URL"
+                        {...register("photo", { required: true })}
+                      />
+
+                      <div>
+                        {errors.name && (
+                          <span className="text-red-500 font-medium">
+                            Photo is required
                           </span>
                         )}
                       </div>
@@ -183,12 +207,7 @@ const SingUp = () => {
                       </Link>
                     </h3>
                     <p>Or sign up with</p>
-
-                    <div className="social_icons">
-                      <div onClick={handelGoogleSingUp}><PiGoogleLogoBold /></div>
-                      <PiFacebookLogoBold />
-                      <TbBrandGithub />
-                    </div>
+                    <SocialLogin></SocialLogin>
                   </div>
                 </div>
               </form>

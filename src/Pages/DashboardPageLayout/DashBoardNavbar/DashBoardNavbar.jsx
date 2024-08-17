@@ -9,10 +9,12 @@ import "../DashBoardNavbar/DashBoardNavbar.css";
 import useCart from "../../../Hook/useCart/useCart";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { ImSpoonKnife } from "react-icons/im";
+import useAdmin from "../../../Hook/useAdmin/useAdmin";
 
 const DashBoardNavbar = () => {
   const [cart] = useCart();
-  const isAdmin = true;
+  const [isAdmin] = useAdmin();
+  console.log(isAdmin);
 
   return (
     <div className="main_dashboard_navbar_container">

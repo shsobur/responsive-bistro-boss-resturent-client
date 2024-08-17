@@ -44,17 +44,24 @@ const AuthProvider = ({children}) => {
       setUser(currentUser);
 
       if(currentUser) {
-        // call jwt
         const userInfo = {email: currentUser.email};
+
         axiosPublic.post("/jwt", userInfo)
         .then(res => {
+          console.log("Token is provited to user:", res.data);
+
           if(res.data.token) {
             localStorage.setItem("access-token", res.data.token);
+            console.log("Token is seted on storage: ", localStorage.getItem("access-token"));
+          }
+          else{
+            console.log("Token is not seted on storage", localStorage.getItem("access-token"));
           }
         })
       }
       else{
         localStorage.removeItem("access-token");
+        console.log("Ther is know user right now");
       }
 
       setLoding(false);
@@ -62,7 +69,7 @@ const AuthProvider = ({children}) => {
     return () => {
       return unSubscribe()
     }
-  }, []);
+  }, [axiosPublic]);
 
   const authInfo = {
     user,

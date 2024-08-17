@@ -9,7 +9,6 @@ import MenuPageLayout from "../Pages/MenuPageLayout/MenuPageLayout";
 import ShopPageLayout from "../Pages/ShopPageLayout/ShopPageLayout";
 import SingUp from "../Pages/Authentication/SingUp/SingUp";
 import SingIn from "../Pages/Authentication/SingIn/SingIn";
-import PrivetRoutes from "./PrivetRoutes";
 import ShopSaladCard from "../Pages/ShopPageLayout/ShopNavbar/ShopSaladCard/ShopSaladCard";
 import ShopPizzaCard from "../Pages/ShopPageLayout/ShopNavbar/ShopPizzaCard/ShopPizzaCard";
 import ShopSoupCard from "../Pages/ShopPageLayout/ShopNavbar/ShopSoupCard/ShopSoupCard";
@@ -84,7 +83,7 @@ export const router = createBrowserRouter([
   // New Routes__
   {
     path: "dashboard",
-    element: <PrivetRoutes><DashboardPageLayout></DashboardPageLayout></PrivetRoutes>,
+    element: <DashboardPageLayout></DashboardPageLayout>,
     children: [
 
       // Route for user__

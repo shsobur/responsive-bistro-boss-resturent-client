@@ -8,14 +8,14 @@ import axios from "axios";
 import useAxios from "../../Hook/useAxios/useAxios";
 import useCart from "../../Hook/useCart/useCart";
 
-const CardButton = ({cardName, foodItem, itemId, itemName, itemImage, itemPrice}) => {
+const CardButton = ({cardName, itemId, itemName, itemImage, itemPrice}) => {
   const {user} = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const axiosSecure = useAxios();
   const [, refetch] = useCart();
 
-  const handleAddToCart = (foodItem) => {
+  const handleAddToCart = () => {
     if(user?.email) {
 
       const menuItem = {
@@ -68,7 +68,7 @@ const CardButton = ({cardName, foodItem, itemId, itemName, itemImage, itemPrice}
 
   return (
     <div className="main_cardName_container">
-      <button onClick={() => handleAddToCart(foodItem)}>
+      <button onClick={() => handleAddToCart()}>
         {cardName}
       </button>
     </div>

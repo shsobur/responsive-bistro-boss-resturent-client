@@ -25,6 +25,8 @@ import AddItem from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AddI
 import ManageItem from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/ManageItem/ManageItem";
 import ManageBooking from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/ManageBooking/ManageBooking";
 import AllUser from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AllUser/AllUser";
+import AdminRoutes from "./AdminRoutes";
+import PrivetRoutes from "./PrivetRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -83,7 +85,7 @@ export const router = createBrowserRouter([
   // New Routes__
   {
     path: "dashboard",
-    element: <DashboardPageLayout></DashboardPageLayout>,
+    element: <PrivetRoutes><DashboardPageLayout></DashboardPageLayout>,</PrivetRoutes>,
     children: [
 
       // Route for user__
@@ -116,23 +118,23 @@ export const router = createBrowserRouter([
 
       {
         path: "adminhome",
-        element: <AdminHome></AdminHome>
+        element: <AdminRoutes><AdminHome></AdminHome></AdminRoutes>
       },
       {
         path: "additem",
-        element: <AddItem></AddItem>
+        element: <AdminRoutes><AddItem></AddItem></AdminRoutes>
       },
       {
         path: "manageitem",
-        element: <ManageItem></ManageItem>
+        element: <AdminRoutes><ManageItem></ManageItem></AdminRoutes>
       },
       {
         path: "managebooking",
-        element: <ManageBooking></ManageBooking>
+        element: <AdminRoutes><ManageBooking></ManageBooking></AdminRoutes>
       },
       {
         path: "alluser",
-        element: <AllUser></AllUser>
+        element: <AdminRoutes><AllUser></AllUser></AdminRoutes>
       }
     ]
   }

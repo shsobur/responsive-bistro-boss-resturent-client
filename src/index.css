@@ -170,6 +170,17 @@
   margin: auto;
 }
 
+/* All deshboard section stayle */
+
+.main_dashboard_page_outer_container {
+  max-width: 1920px;
+  min-width: 640px;
+  margin: auto;
+}
+
+
+
+
 
 
 

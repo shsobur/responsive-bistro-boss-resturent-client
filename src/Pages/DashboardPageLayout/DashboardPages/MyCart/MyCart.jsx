@@ -4,6 +4,7 @@ import useCart from "../../../../Hook/useCart/useCart";
 import "../MyCart/MyCart.css";
 import { RiDeleteBinLine } from "react-icons/ri";
 import useAxios from "../../../../Hook/useAxios/useAxios";
+import { Link } from "react-router-dom";
 
 const MyCart = () => {
   const [cart, refetch] = useCart();
@@ -54,7 +55,9 @@ const MyCart = () => {
               <h2>total price: $ {totalPrice}</h2>
             </div>
 
-            <button>PAY</button>
+            <Link to="/dashboard/payment">
+              <button>PAY</button>
+            </Link>
           </div>
 
           <div>

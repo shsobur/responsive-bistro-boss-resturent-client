@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import "../AddItem/AddItem.css";
 import "../../../../../componentes/AllDashboardPageStyle/AllDashboardPageStyle.css";
 import SectionTitle from "../../../../../componentes/SectionTitle/SectionTitle";

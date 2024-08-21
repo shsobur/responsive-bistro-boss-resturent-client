@@ -147,7 +147,7 @@ const DashBoardNavbar = () => {
               </NavLink>
 
               <NavLink
-                to="payment"
+                to="paymenthistory"
                 className={({ isActive }) =>
                   isActive
                     ? "text-[#ffffff] font-extrabold"

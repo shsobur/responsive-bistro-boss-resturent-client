@@ -75,7 +75,7 @@ const AdminHome = () => {
         <div className="admin_chart_outer_container">
 
           <div className="admin_bar_chart_container">
-            Working on prosece...
+          <h2 className="text-3xl text-right mt-80">Working on process...</h2>
           </div>
           <div className="admin_bar_pai_container"></div>
 

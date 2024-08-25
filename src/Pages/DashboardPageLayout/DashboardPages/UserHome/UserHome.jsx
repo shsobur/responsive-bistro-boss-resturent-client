@@ -11,10 +11,14 @@ const UserHome = () => {
     <div className="main_dashboard_page_outer_container">
       <div className="main_dashboard_page_inner_container">
 
-        <div>
+        <div className="w-full text-center pt-10">
           {
-            name ? <span className="font-semibold text-4xl text-center mt-52">Hello {name}, Wellcome back</span> : "Wellcome back"
+            name ? <span className="font-semibold text-4xl text-center ">Hello, {name} Wellcome back</span> : "Wellcome back"
           }
+        </div>
+
+        <div>
+          <h2 className="text-3xl text-center mt-80">Working on process...</h2>
         </div>
 
       </div>

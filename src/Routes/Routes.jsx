@@ -17,7 +17,6 @@ import ShopDrinkCard from "../Pages/ShopPageLayout/ShopNavbar/ShopDrinkCard/Shop
 import UserHome from "../Pages/DashboardPageLayout/DashboardPages/UserHome/UserHome";
 import MyCart from "../Pages/DashboardPageLayout/DashboardPages/MyCart/MyCart";
 import Reservation from "../Pages/DashboardPageLayout/DashboardPages/Reservation/Reservation";
-import Payment from "../Pages/DashboardPageLayout/DashboardPages/Payment/Payment";
 import AddReview from "../Pages/DashboardPageLayout/DashboardPages/AddReview/AddReview";
 import Booking from "../Pages/DashboardPageLayout/DashboardPages/Booking/Booking";
 import AdminHome from "../Pages/DashboardPageLayout/DashboardPages/AdminPages/AdminHome/AdminHome";
@@ -109,7 +108,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "payment",
-        element: <Payment></Payment>
+        element: "",
       },
       {
         path: "addreview",

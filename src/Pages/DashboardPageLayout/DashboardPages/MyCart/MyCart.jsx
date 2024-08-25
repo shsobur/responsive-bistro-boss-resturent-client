@@ -4,15 +4,14 @@ import useCart from "../../../../Hook/useCart/useCart";
 import "../MyCart/MyCart.css";
 import { RiDeleteBinLine } from "react-icons/ri";
 import useAxios from "../../../../Hook/useAxios/useAxios";
-import { Link } from "react-router-dom";
 
 const MyCart = () => {
   const [cart, refetch] = useCart();
   const axiosSecure = useAxios();
+
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
   const handleDelete = (id) => {
-    console.log(id);
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -37,6 +36,19 @@ const MyCart = () => {
     });
   };
 
+  const handelPayButton = () => {
+    if(!cart.length <= 0 ) {
+      Swal.fire({
+        title: "Sorry Sir_!",
+        text: "Payment is not abailable rigth now. We are working on it, but very soon it will available",
+        icon: "question"
+      });
+    }
+    else{
+      Swal.fire("Sorry, No cart available");
+    }
+  }
+
   return (
     <div className="main_cart_box_container">
       <SectionTitle
@@ -55,9 +67,7 @@ const MyCart = () => {
               <h2>total price: $ {totalPrice}</h2>
             </div>
 
-            <Link to="/dashboard/payment">
-              <button>PAY</button>
-            </Link>
+            <button onClick={() => handelPayButton()}>PAY</button>
           </div>
 
           <div>

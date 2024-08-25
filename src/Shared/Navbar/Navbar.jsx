@@ -8,11 +8,15 @@ import { TiShoppingCart } from "react-icons/ti";
 import { AuthContext } from "../../componentes/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 import useCart from "../../Hook/useCart/useCart";
+import useAdmin from "../../Hook/useAdmin/useAdmin";
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const { logOut, user } = useContext(AuthContext);
+  const [isAdmin] = useAdmin();
   const [cart] = useCart();
+
+  console.log("admin:", isAdmin);
 
   const useImg = user?.photoURL;
 
@@ -87,18 +91,36 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li onClick={handelHamburgerIcon}>
-              <NavLink
-                to="/dashboard"
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#EEFF25] font-extrabold border-[#ffffff] border-b-2"
-                    : "text-[#ffffff] font-extrabold"
-                }
-              >
-                <>DASHBOARD</>
-              </NavLink>
-            </li>
+            {isAdmin ? (
+              <li onClick={handelHamburgerIcon}>
+                <NavLink
+                  to="/dashboard/adminhome"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#EEFF25] font-extrabold border-[#ffffff] border-b-2"
+                      : "text-[#ffffff] font-extrabold"
+                  }
+                >
+                  <>ADMIN DASHBOARD</>
+                </NavLink>
+              </li>
+            ) : (
+              user &&
+              !isAdmin && (
+                <li onClick={handelHamburgerIcon}>
+                  <NavLink
+                    to="/dashboard/userhome"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "text-[#EEFF25] font-extrabold border-[#ffffff] border-b-2"
+                        : "text-[#ffffff] font-extrabold"
+                    }
+                  >
+                    <>USER DASHBOARD</>
+                  </NavLink>
+                </li>
+              )
+            )}
 
             <li onClick={handelHamburgerIcon}>
               <NavLink
@@ -126,7 +148,10 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <div onClick={handelHamburgerIcon} className="menubar_sing_container">
+            <div
+              onClick={handelHamburgerIcon}
+              className="menubar_sing_container"
+            >
               {user ? (
                 <div onClick={handelSingOut}>LOG OUT</div>
               ) : (
@@ -164,9 +189,11 @@ const Navbar = () => {
           </div>
 
           <div className="user_image">
-            {
-              user ? <img className="sing_in_user_img" src={useImg} alt="user image" /> : <IoMdContact />
-            }
+            {user ? (
+              <img className="sing_in_user_img" src={useImg} alt="user image" />
+            ) : (
+              <IoMdContact />
+            )}
           </div>
 
           <div
